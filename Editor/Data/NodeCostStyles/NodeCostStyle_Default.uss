@@ -1,0 +1,34 @@
+.SGProfilerDetailsTitle {
+    
+}
+
+
+.Perf_Complex {
+    border-width: 1px;
+    border-color: red;
+    border-radius: 6px;
+}
+
+.Perf_Free {
+    border-width: 1px;
+    border-color: lime;
+    border-radius: 6px;
+}
+
+.Perf_Simple {
+    border-width: 1px;
+    border-color: aqua;
+    border-radius: 6px;
+}
+
+.Perf_ProjectKiller{
+    border-width: 1px;
+    border-color: magenta;
+    border-radius: 6px;
+}
+
+.Perf_Moderate {
+    border-width: 1px;
+    border-color: orange;
+    border-radius: 6px;
+}

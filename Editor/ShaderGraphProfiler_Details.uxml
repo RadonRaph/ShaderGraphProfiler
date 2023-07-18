@@ -1,0 +1,31 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement name="ShaderGraphProfilerDetails" style="flex-direction: column; flex-shrink: 1; background-color: rgba(63, 63, 63, 0.8);">
+        <ui:Label text="Title " display-tooltip-when-elided="true" name="DetailsTitle" style="margin-left: 6px; -unity-font-style: normal; font-size: 12px; margin-top: 1%; width: auto;" />
+        <ui:GroupBox style="flex-direction: row; width: auto; margin-top: 3px; margin-bottom: 3px; margin-right: 3px; margin-left: 3px; padding-left: 0; padding-top: 0; padding-bottom: 0;">
+            <ui:GroupBox tooltip="Simple arithmetic math" style="flex-grow: 1; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0;">
+                <ui:Label text="FMA" display-tooltip-when-elided="true" tooltip="Simple Arithmetic Math" class="SGProfilerDetailsTitle" style="-unity-font-style: bold; -unity-text-align: upper-center; font-size: 11px;" />
+                <ui:Label text="N/A" display-tooltip-when-elided="true" name="FMA_Label" style="-unity-text-align: upper-center;" />
+            </ui:GroupBox>
+            <ui:GroupBox tooltip="Convertion math" style="flex-grow: 1; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0;">
+                <ui:Label text="CVT" display-tooltip-when-elided="true" tooltip="Convertion Math" class="SGProfilerDetailsTitle" style="-unity-font-style: bold; -unity-text-align: upper-center; font-size: 11px;" />
+                <ui:Label text="N/A" display-tooltip-when-elided="true" name="CVT_Label" style="-unity-text-align: upper-center;" />
+            </ui:GroupBox>
+            <ui:GroupBox tooltip="Complex Math" style="flex-grow: 1; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0;">
+                <ui:Label text="SFU" display-tooltip-when-elided="true" tooltip="Complex Math" class="SGProfilerDetailsTitle" style="-unity-font-style: bold; -unity-text-align: upper-center; font-size: 11px;" />
+                <ui:Label text="N/A" display-tooltip-when-elided="true" name="SFU_Label" style="-unity-text-align: upper-center;" />
+            </ui:GroupBox>
+            <ui:GroupBox tooltip="Memory operation (Load/Store)" style="flex-grow: 1; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0;">
+                <ui:Label text="MEM" display-tooltip-when-elided="true" tooltip="Memory operation (Load/Store)" class="SGProfilerDetailsTitle" style="-unity-font-style: bold; -unity-text-align: upper-center; font-size: 11px;" />
+                <ui:Label text="N/A" display-tooltip-when-elided="true" name="MEM_Label" style="-unity-text-align: upper-center;" />
+            </ui:GroupBox>
+            <ui:GroupBox style="flex-grow: 1; display: none; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0;">
+                <ui:Label text="VAR" display-tooltip-when-elided="true" tooltip="Variying operation (cache)" style="-unity-font-style: bold; -unity-text-align: upper-center;" />
+                <ui:Label text="N/A" display-tooltip-when-elided="true" name="VAR_Label" style="-unity-text-align: upper-center;" />
+            </ui:GroupBox>
+            <ui:GroupBox tooltip="Texture operation (sampling, filtering)" style="flex-grow: 1; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0;">
+                <ui:Label text="TEX" display-tooltip-when-elided="true" tooltip="Texture operation (sampling, filtering)" class="SGProfilerDetailsTitle" style="-unity-font-style: bold; -unity-text-align: upper-center; font-size: 11px;" />
+                <ui:Label text="N/A" display-tooltip-when-elided="true" name="TEX_Label" style="-unity-text-align: upper-center;" />
+            </ui:GroupBox>
+        </ui:GroupBox>
+    </ui:VisualElement>
+</ui:UXML>

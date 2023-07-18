@@ -1,0 +1,21 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/ShaderGraphProfiler/Editor/ShaderGraphProfilerStyle.uss?fileID=7433441132597879392&amp;guid=9ffc0c1ccabefa748b2ac564def42439&amp;type=3#ShaderGraphProfilerStyle" />
+    <ui:Label text="Welcome to ShaderGraph Profiler !" display-tooltip-when-elided="true" name="Welcome" style="height: 32px; flex-wrap: nowrap; white-space: normal; -unity-font-style: bold; font-size: 15px;" />
+    <ui:Label text="1. First select a profile to suits better your target platform" display-tooltip-when-elided="true" name="FirstStep" style="flex-wrap: nowrap; white-space: normal;" />
+    <ui:DropdownField label="Profile" index="-1" choices="System.Collections.Generic.List`1[System.String]" name="ProfileDropDown" tooltip="Profiles contains platform specific details to provide the closest information to real world metrics. " />
+    <ui:Label text="2. Select a stylesheet that fits you" display-tooltip-when-elided="true" name="SecondStep" style="flex-wrap: nowrap; white-space: normal;" />
+    <ui:DropdownField label="Stylesheet" index="-1" choices="System.Collections.Generic.List`1[System.String]" name="StyleDropDown" />
+    <ui:Label text="3. Select your options" display-tooltip-when-elided="true" name="ThirdLabel" style="flex-wrap: nowrap; white-space: normal;" />
+    <ui:Toggle label="Color cost indicator" name="ColorCostToggle" value="true" />
+    <ui:Toggle label="Per node GPU unit cost" name="PerNodeCost" value="true" />
+    <ui:Toggle label="Cumulative node cost" name="CumulToggle" value="true" tooltip="If enable the details panel show the cost of this node plus all the previous attached nodes. " style="margin-left: 5%;" />
+    <ui:Label text="4. Hook to a ShaderGraph window" display-tooltip-when-elided="true" name="FourthStep" style="flex-wrap: nowrap; white-space: normal;" />
+    <ui:GroupBox>
+        <ui:GroupBox name="WaitingBox" style="flex-direction: row; display: flex; visibility: visible;">
+            <ui:Label text="Waiting for a shadergraph window to be focused..." display-tooltip-when-elided="true" name="WaitingHook" style="white-space: normal;" />
+            <ui:ProgressBar value="22" name="ProgressBar" style="width: 201px; margin-left: 2%;" />
+        </ui:GroupBox>
+        <ui:Button text="Refresh" display-tooltip-when-elided="true" name="RefreshButton" />
+    </ui:GroupBox>
+    <ui:Label text="Disclaimer:&#10;This profiler does not profile in realtime, it uses database to estimates cycles cost.&#10;Depending on hardware and configuration results may varies. &#10;Also this profiler uses a &quot;Most Likely&quot; approach for parameters types, for example the Dot node&#10;was measured with Float3. Using it with Float2 or Half3 will have a differents cost. " display-tooltip-when-elided="true" style="-unity-font-style: bold; color: rgb(250, 53, 53); white-space: normal;" />
+</ui:UXML>

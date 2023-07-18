@@ -1,0 +1,390 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0138a55f459c36947b4d9e69229743f6, type: 3}
+  m_Name: MobileQuest2Similar
+  m_EditorClassIdentifier: 
+  description: 'Cost data from Mali Offline Compliler.
+
+    Process:  HLSL->DXC(Spirv,
+    Optim lvl 3, ps_6_0)->SPIRV->Mali Offline Compiler (core G710)'
+  nodeCosts:
+  - nodeTitle: Multiply
+    unitCost:
+      FMA: 0.03
+      CVT: 0
+      SFU: 0
+      MEM: 0
+      VAR: 0.25
+      TEX: 0
+    globalCost: 1
+  - nodeTitle: Round
+    unitCost:
+      FMA: 0.03
+      CVT: 0
+      SFU: 0
+      MEM: 0
+      VAR: 0.25
+      TEX: 0
+    globalCost: 1
+  - nodeTitle: Sample Texture 2D
+    unitCost:
+      FMA: 0
+      CVT: 0
+      SFU: 0
+      MEM: 0
+      VAR: 0.13
+      TEX: 0.13
+    globalCost: 3
+  - nodeTitle: Sine
+    unitCost:
+      FMA: 0.05
+      CVT: 0.02
+      SFU: 0.06
+      MEM: 0
+      VAR: 0.06
+      TEX: 0
+    globalCost: 3
+  - nodeTitle: Modulo
+    unitCost:
+      FMA: 0.02
+      CVT: 0.03
+      SFU: 0.03
+      MEM: 0
+      VAR: 0.13
+      TEX: 0
+    globalCost: 3
+  - nodeTitle: Divide
+    unitCost:
+      FMA: 0.01
+      CVT: 0.02
+      SFU: 0.03
+      MEM: 0
+      VAR: 0.13
+      TEX: 0
+    globalCost: 2
+  - nodeTitle: Absolute
+    unitCost:
+      FMA: 0.01
+      CVT: 0.02
+      SFU: 0
+      MEM: 0
+      VAR: 0.06
+      TEX: 0
+    globalCost: 0
+  - nodeTitle: Gradient Noise
+    unitCost:
+      FMA: 0.84
+      CVT: 0.18
+      SFU: 0.13
+      MEM: 0
+      VAR: 0.13
+      TEX: 0
+    globalCost: 4
+  - nodeTitle: Dot Product
+    unitCost:
+      FMA: 0.02
+      CVT: 0.02
+      SFU: 0
+      MEM: 0
+      VAR: 0.13
+      TEX: 0
+    globalCost: 1
+  - nodeTitle: Add
+    unitCost:
+      FMA: 0.03
+      CVT: 0
+      SFU: 0
+      MEM: 0
+      VAR: 0.5
+      TEX: 0
+    globalCost: 1
+  - nodeTitle: One Minus
+    unitCost:
+      FMA: 0.03
+      CVT: 0
+      SFU: 0
+      MEM: 0
+      VAR: 0.25
+      TEX: 0
+    globalCost: 1
+  - nodeTitle: Lerp
+    unitCost:
+      FMA: 0.06
+      CVT: 0
+      SFU: 0
+      MEM: 0
+      VAR: 0.56
+      TEX: 0
+    globalCost: 2
+  - nodeTitle: Saturate
+    unitCost:
+      FMA: 0.03
+      CVT: 0
+      SFU: 0
+      MEM: 0
+      VAR: 0.25
+      TEX: 0
+    globalCost: 0
+  - nodeTitle: Power
+    unitCost:
+      FMA: 0.09
+      CVT: 0.09
+      SFU: 0.25
+      MEM: 0
+      VAR: 0.5
+      TEX: 0
+    globalCost: 3
+  - nodeTitle: Transform
+    unitCost:
+      FMA: 0.03
+      CVT: 0.02
+      SFU: 0
+      MEM: 0
+      VAR: 0.5
+      TEX: 0
+    globalCost: 1
+  - nodeTitle: Normalize
+    unitCost:
+      FMA: 0
+      CVT: 0.04
+      SFU: 0
+      MEM: 0
+      VAR: 0.06
+      TEX: 0
+    globalCost: 1
+  - nodeTitle: Maximum
+    unitCost:
+      FMA: 0
+      CVT: 0.03
+      SFU: 0
+      MEM: 0
+      VAR: 0.06
+      TEX: 0
+    globalCost: 1
+  - nodeTitle: Minimum
+    unitCost:
+      FMA: 0
+      CVT: 0.03
+      SFU: 0
+      MEM: 0
+      VAR: 0.06
+      TEX: 0
+    globalCost: 1
+  - nodeTitle: Reciprocal
+    unitCost:
+      FMA: 0
+      CVT: 0
+      SFU: 0.13
+      MEM: 0
+      VAR: 0.25
+      TEX: 0
+    globalCost: 3
+  - nodeTitle: Reciprocal Square Root
+    unitCost:
+      FMA: 0
+      CVT: 0
+      SFU: 0.13
+      MEM: 0
+      VAR: 0.25
+      TEX: 0
+    globalCost: 3
+  - nodeTitle: Square Root
+    unitCost:
+      FMA: 0
+      CVT: 0.06
+      SFU: 0.13
+      MEM: 0
+      VAR: 0.25
+      TEX: 0
+    globalCost: 3
+  - nodeTitle: Subtract
+    unitCost:
+      FMA: 0.03
+      CVT: 0
+      SFU: 0
+      MEM: 0
+      VAR: 0.5
+      TEX: 0
+    globalCost: 1
+  - nodeTitle: Tiling And Offset
+    unitCost:
+      FMA: 0.01
+      CVT: 0.02
+      SFU: 0
+      MEM: 0
+      VAR: 0.19
+      TEX: 0
+    globalCost: 1
+  - nodeTitle: Smoothstep
+    unitCost:
+      FMA: 0.08
+      CVT: 0
+      SFU: 0
+      MEM: 0
+      VAR: 0.19
+      TEX: 0
+    globalCost: 2
+  - nodeTitle: Floor
+    unitCost:
+      FMA: 0.03
+      CVT: 0
+      SFU: 0
+      MEM: 0
+      VAR: 0.06
+      TEX: 0
+    globalCost: 1
+  - nodeTitle: Spherize
+    unitCost:
+      FMA: 0.06
+      CVT: 0.02
+      SFU: 0
+      MEM: 0
+      VAR: 0.38
+      TEX: 0
+    globalCost: 2
+  - nodeTitle: Rotate About Axis
+    unitCost:
+      FMA: 0.22
+      CVT: 0.02
+      SFU: 0.09
+      MEM: 0
+      VAR: 0.44
+      TEX: 0
+    globalCost: 3
+  - nodeTitle: Hue
+    unitCost:
+      FMA: 0.12
+      CVT: 0.12
+      SFU: 0.06
+      MEM: 0
+      VAR: 0.25
+      TEX: 0
+    globalCost: 3
+  - nodeTitle: Saturation
+    unitCost:
+      FMA: 0.04
+      CVT: 0.02
+      SFU: 0
+      MEM: 0
+      VAR: 0.25
+      TEX: 0
+    globalCost: 2
+  - nodeTitle: Contrast
+    unitCost:
+      FMA: 0.02
+      CVT: 0.02
+      SFU: 0
+      MEM: 0
+      VAR: 0.12
+      TEX: 0
+    globalCost: 1
+  - nodeTitle: Reflection
+    unitCost:
+      FMA: 0.04
+      CVT: 0.02
+      SFU: 0
+      MEM: 0
+      VAR: 0.38
+      TEX: 0
+    globalCost: 2
+  - nodeTitle: Cosine
+    unitCost:
+      FMA: 0.05
+      CVT: 0.02
+      SFU: 0.06
+      MEM: 0
+      VAR: 0.06
+      TEX: 0
+    globalCost: 3
+  - nodeTitle: Clamp
+    unitCost:
+      FMA: 0
+      CVT: 0.04
+      SFU: 0
+      MEM: 0
+      VAR: 0.19
+      TEX: 0
+    globalCost: 1
+  - nodeTitle: DDX
+    unitCost:
+      FMA: 0.01
+      CVT: 0.02
+      SFU: 0.06
+      MEM: 0
+      VAR: 0.06
+      TEX: 0
+    globalCost: 2
+  - nodeTitle: DDY
+    unitCost:
+      FMA: 0.02
+      CVT: 0.04
+      SFU: 0.06
+      MEM: 0
+      VAR: 0.06
+      TEX: 0
+    globalCost: 2
+  - nodeTitle: DDXY
+    unitCost:
+      FMA: 0.02
+      CVT: 0.04
+      SFU: 0.06
+      MEM: 0
+      VAR: 0.06
+      TEX: 0
+    globalCost: 2
+  - nodeTitle: Fraction
+    unitCost:
+      FMA: 0.01
+      CVT: 0.03
+      SFU: 0
+      MEM: 0
+      VAR: 0.06
+      TEX: 0
+    globalCost: 1
+  - nodeTitle: Preview
+    unitCost:
+      FMA: 0
+      CVT: 0
+      SFU: 0
+      MEM: 0
+      VAR: 0
+      TEX: 0
+    globalCost: 0
+  - nodeTitle: DirectionalPBR
+    unitCost:
+      FMA: 0.96
+      CVT: 0.19
+      SFU: 0.03
+      MEM: 0
+      VAR: 0
+      TEX: 0
+    globalCost: 2
+  - nodeTitle: PointLightPBR
+    unitCost:
+      FMA: 3.17
+      CVT: 1.36
+      SFU: 1.45
+      MEM: 0
+      VAR: 0
+      TEX: 0
+    globalCost: 3
+  - nodeTitle: GlobalIllumination
+    unitCost:
+      FMA: 0.51
+      CVT: 0.17
+      SFU: 0.28
+      MEM: 0
+      VAR: 0
+      TEX: 1
+    globalCost: 3
+  styleSheet: {fileID: 7433441132597879392, guid: 41f364df20fe6e24eabf2fe612a6aa71,
+    type: 3}

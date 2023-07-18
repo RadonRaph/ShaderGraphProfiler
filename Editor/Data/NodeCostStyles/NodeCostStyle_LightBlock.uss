@@ -1,0 +1,21 @@
+VisualElement {}
+
+.Perf_Complex {
+    background-color: #440000;
+}
+
+.Perf_Free {
+    background-color: #004400;
+}
+
+.Perf_Simple {
+    background-color: #006666;
+}
+
+.Perf_ProjectKiller{
+    background-color: #440044;
+}
+
+.Perf_Moderate {
+    background-color: #442200;
+}

@@ -1,0 +1,9 @@
+* {
+	margin-left: 1%;
+	text-wrap :wrap;
+}
+
+
+Toggle, DropdownField {
+	margin-left: 5%;
+}
