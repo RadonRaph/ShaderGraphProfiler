@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Serialization;
 using UnityEngine.UIElements;
 
-[CreateAssetMenu(menuName = "Albyon/Optimisation/NodeCostData", fileName = "nodeCostData")]
+//[CreateAssetMenu(menuName = "Albyon/Optimisation/NodeCostData", fileName = "nodeCostData")]
 public class NodeCostData : ScriptableObject
 {
     [System.Serializable]
